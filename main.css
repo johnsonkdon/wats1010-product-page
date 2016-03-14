@@ -1,8 +1,315 @@
-/* Styles for Product Page Customization */
-/* NOTE: Do not edit the Bootstrap CSS files. */
+/* Common styles */
+body{
+	font-size:14px;
+	font-family:Arial, Helvetica;
+	background:#fff url('/assets/images/page-bg.jpg');	
+	margin:0;
+	padding:0 75px;
+}
 
-body {
-    padding-top: 30px;
-    padding-bottom: 20px;
-    color: green;
+header{
+	text-align:center;
+	padding:10px;
+}
+
+header .logo{
+	background:url('/assets/images/logo.png') no-repeat;	
+	width:100px;
+	height:75px;
+	display:inline-block;
+	text-indent:-99999px;
+}
+
+h3{
+	text-transform:uppercase;
+	text-align:center;
+	margin: 0;
+    padding: 30px 0 20px;
+}
+
+.btn {
+	color:#2E7DB3;
+	cursor: pointer;
+	padding: 10px 20px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;	
+	background: #fff;
+	border:solid 1px #2E7DB3 ;
+	border-radius:20px;
+	outline:none;
+}
+
+.btn:hover,.btn:active {
+	background: #519ED4;
+	color:#fff;
+}
+
+.btn:active,.btn:visited  {
+	background: red;
+	border:solid 1px red;
+	color:#fff;
+}
+
+/* navigation*/
+nav{
+	background:rgba(255, 255, 255, 0.4);
+	overflow:hidden;
+	margin-bottom:10px;	
+}
+	
+nav ul{
+	float:left;
+}
+	
+nav ul li{
+	width:auto;
+	margin:0 25px;
+	list-style:none;
+	float:left;
+}
+
+nav ul.social{
+	position:fixed;
+	right:100px;
+	top:87px;
+}
+
+nav ul.social li{
+	width:32px;
+}
+
+nav ul.social li a{
+	background: url('/assets/images/social-icons.png') no-repeat top left; 
+	width:32px;
+	height:32px;
+	display:inline-block;	
+	text-decoration:none;
+	padding:0;
+}
+
+nav ul.main-nav li a:hover{
+	background:#fff;
+	border-radius:3px;
+}
+
+nav ul.social li.instagram a {
+	background-position: 0 0;
+} 
+	
+nav ul.social li.googleplus a { 
+	background-position: -41px 0; 
+} 
+
+nav ul.social li.fb a {
+	background-position: -83px 0;
+} 
+
+nav ul.main-nav li a,.features ul li a{
+	display:inline-block;
+	padding:0px;
+	text-decoration:none;
+	text-transform:uppercase;
+	margin:0px;
+	color:#2E7DB3;
+	font-weight:bold;
+}
+
+/* video*/
+.video{
+	background:rgba(255, 255, 255, 0.4);
+	text-align:center;
+	margin-bottom:10px;	
+}
+	
+.buy-now{
+	text-align:center;	
+	background:rgba(255, 255, 255, 0.4);
+	margin-bottom:10px;	
+}
+
+/* Features*/
+.features{
+	background:rgba(255, 255, 255, 0.4);
+	padding:0 20px;
+	margin-bottom:10px;	
+}
+
+.features div{
+	width:820px;
+	margin:0 auto;
+	padding:20px 0 40px;
+}
+
+.features ul{
+	overflow:hidden;
+	width: 400px;
+	margin:10px auto;
+	clear:both;
+}
+
+.features ul li{
+	width:48px;
+	margin:0 25px;
+	list-style:none;
+	float:left;
+}
+
+.features ul li a{
+	background:url("/assets/images/sprites-features.png") no-repeat;
+	width:48px;
+	height:48px;
+	display:inline-block;	
+	text-decoration:none;
+}
+
+.features ul li.download a{	
+	 background-position: -174px 0; 
+}
+
+.features ul li.one-click a{	
+	background-position: -116px 0;
+}
+
+.features ul li.certified a{	
+	 background-position: 0 0;
+}
+
+.features ul li.time a{	
+	background-position: -58px 0;
+}
+
+/* Contact Form*/
+
+.contact{
+	text-align:center;
+	padding:30px 0 0 0;
+}
+
+.contact div{
+	padding:20px;
+}
+
+.contact div input,.contact div textarea{
+	width:400px;
+	padding:5px
+}
+
+/* Footer*/
+
+footer{
+	text-align:center;
+	border-top:solid 1px #000;
+	padding:20px;
+}
+
+footer span{
+	padding:0 40px;
+}
+
+/*Testimonial Slider*/
+#sliderContainer {
+  position: relative;
+  width: 520px;
+  height:auto;
+  margin: 0 auto;
+}
+
+#slider {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  border: #DEDEDE solid 1px;
+  padding: 10px;
+  background:rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
+}
+
+#slider img {
+  width: 480px;
+  height:317px;
+  height: auto;
+  display: block;
+  margin:0 auto;
+}
+
+.slide {
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.slide.active {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.slideCopy {
+  width:464px;
+  padding: 10px;
+  margin:0 auto;
+  background:rgba(255, 255, 255, 0.4);
+  color: #000;
+  clear:both;
+}
+
+.slideCopy p { 
+	font-size: 12px; 
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: auto 0;
+  cursor: pointer;
+  z-index: 100;
+  background-size: 10px;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+
+#prev {
+  left: 30px;
+  background-image: url('/assets/images/arrow-left.png');
+  background-position: 13px center;
+  transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+}
+
+#next {
+  right: 30px;
+  background-image: url('/assets/images/arrow-right.png');
+  background-position: 16px center;
+  transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+}
+
+.sliderHovered .arrow {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sliderHovered #prev {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+.sliderHovered #next {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
 }
